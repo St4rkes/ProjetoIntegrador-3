@@ -1,0 +1,516 @@
+body {
+    font-family: Arial, sans-serif;
+    height: 100vh;
+  }
+  
+
+  h1 {
+    color: #333333;
+    font-family: Arial, sans-serif;
+    letter-spacing: 1px;
+    justify-content: center;
+    display: flex;
+  }
+    
+  
+  
+  label {
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 20px;
+    color: #FFF;
+  }
+  
+  input[type="text"],
+  input[type="number"],
+  textarea,
+  input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+  }
+  
+  textarea {
+    resize: vertical;
+  }
+  
+  button[type="submit"] {
+    background-color: #FFF;
+    color: #343030;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 20px;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #004196;
+    color:#FFF
+  }
+  
+  .formulario button {
+    display: block;
+    margin: auto;
+  }
+  /* Adicionar estilo ao formulário */
+  form {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  /* Adicionar estilo ao cabeçalho do formulário */
+  form h2 {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+  }
+
+  .formulario {
+    background-color:  #0074D9;
+    padding: 30px 50px 60px 50px;
+    border-radius: 5px;
+  }
+
+  .container {
+    width: 80%;
+    margin: auto;
+    padding-top: 80px;
+    height: 100vh;
+    background-color: #F0F0F0;
+  }
+  
+  /* Adicionar estilo ao campo de erro */
+  .error {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+  }
+  
+  /* Adicionar estilo ao campo de sucesso */
+  .success {
+    color: green;
+    font-size: 14px;
+    margin-top: 5px;
+  }
+  
+  header {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+  }
+  
+  .toolbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+    padding: 0 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .logo a {
+    font-size: 28px;
+    font-weight: bold;
+    color: #01060a;
+    text-decoration: none;
+  }
+  
+  .search form {
+    display: flex;
+  }
+  
+  .search input[type="text"] {
+    border: none;
+    border-radius: 3px 0 0 3px;
+    padding: 10px;
+    width: 300px;
+  }
+  
+  .search button {
+    border: none;
+    background-color: #0c0c0c;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 0 3px 3px 0;
+    cursor: pointer;
+    margin-bottom: 10px;
+    margin-top: 5px;
+  }
+  
+  .nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav ul li {
+    position: relative;
+    margin: 0 10px;
+  }
+  
+  .nav ul li a {
+    color: #333;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 20px 10px;
+    display: block;
+  }
+  
+  .nav ul li:hover > .dropdown-content {
+    display: block;
+  }
+
+  ul li a:hover {
+    background-color: #000508;
+    color: #FFF;
+    border-radius: 5px;
+  }
+  
+  .dropdown-content {
+    position: absolute;
+    background-color: #fff;
+    display: none;
+    min-width: 200px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+    list-style: none;
+    
+}
+
+
+.background{
+    background-image: url(img/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    width: 100%;
+    max-width: 100%;
+    height: 100vh;
+}
+
+header{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 1rem;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    position: fixed;
+    background: transparent;
+    transition: all .35s ease;
+    background-color: #fff;
+    padding: 14px 14%;
+}
+
+
+.logo{
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.cabeçalho-link{
+    display: flex;
+    gap: 3rem;
+}
+
+.cabeçalho-link a{
+    color: #111;
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+.cabeçalho-link a:hover{
+    color: #c8815f;
+}
+
+.icon span{
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.icon span:hover{
+    color: #c8815f;
+}
+
+.Meio{
+    padding: 7rem 0 0 8.5rem;
+    line-height: 4rem;
+}
+
+.Meio h1{
+    font-size: 4rem;
+    
+}
+
+.Meio button{
+    background-color: #c8815f;
+    padding: 1rem 3rem 1rem 3rem;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+   font-size: 1rem;
+   cursor: pointer;
+   transition: 0.3s;
+
+}
+
+.Meio button:hover{
+      background-color: #111;
+      transform: scaleY(1.2);
+}
+
+section{
+    padding-top: 7rem;
+}
+
+section h1{
+    align-items: center;
+    text-align: center;
+    font-size: 2rem;
+
+}
+
+.Container-card-1{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding-top: 2rem;
+   
+}
+
+.cards img{
+    width: 450px;
+    height: auto;
+    transition: 0.35s ease;
+    
+}
+
+.cards img:hover{
+     transform: scale(0.9) translateY(-5px);
+     cursor: pointer;
+   
+     
+}
+
+.cta{
+    height: 60vh;
+    width: 100%;
+    background: url(../img/ffffc.png);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    margin-top: 5rem;
+}
+
+.text-cta{
+    padding-left: 5rem;
+}
+
+.text-cta h6{
+    font-size: 17px;
+	font-weight: 500;
+	letter-spacing: .6px;
+	margin-bottom: 14px;
+
+}
+
+.text-cta h4{
+    font-size: 3.3rem;
+	line-height: 1.2;
+	letter-spacing: .6rem;
+	margin-bottom: 30px;
+}
+
+.text-cta a{
+    background-color: #c8815f;
+    padding: 1rem 3rem 1rem 3rem;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+   font-size: 1rem;
+   cursor: pointer;
+   transition: 0.3s;
+}
+
+.text-cta a:hover{
+    background-color: #111;
+      transform: scaleY(1.2);
+
+}
+
+.Container-roupas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    align-items: center;
+    text-align: center;
+    margin-top: 3rem;
+    
+}
+
+.Container-roupas img:hover{
+    transform: scale(0.9) translateY(-5px);
+    cursor: pointer;
+    transition: 0.3s;
+
+}
+
+.roupa img{
+    width: 250px;
+    height: auto;
+}
+
+.roupa{
+    background-color: #c8815f;
+    color: #000;
+}
+
+.Marcas{
+    margin-top: 10rem;
+    cursor: pointer;
+    align-items: center;
+    text-align: center;
+}
+
+.Marcas img{
+    width: 180px;
+    height: auto;
+    background-color: aliceblue;
+}
+
+#Contato{
+    display: flex;
+    gap: 5rem;
+    justify-content: space-around;
+    background-color: #111;
+    padding: 8rem;
+    margin-top: 5rem;
+    display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+}
+
+.meio-contato h3{
+    color: #fff;
+    font-size: 23px;
+    margin-bottom: 1.6rem;
+}
+
+.meio-contato h5{
+    font-size: 15px;
+    font-weight: 600;
+    color: #555;
+}
+
+.meio-contato li{
+    margin-bottom: 15px;
+}
+
+.meio-contato li a{
+    display: block;
+    color: #555;
+    font-weight: 600;
+    transition: all .35s ease;
+}
+
+.meio-contato2 > a{
+  padding: 3px;
+  
+}
+
+.meio-contato2 > li{
+  color: #fff;
+  margin: 15px 0px;
+  
+}
+
+.meio-contato2 h3{
+  color: #fff;
+  font-size: 23px;
+  margin-bottom: 1.6rem;
+}
+
+.last-text{
+    text-align: center;
+    background-color: #555;
+    color: #fff;
+}
+    
+.nossaHistoria h1{
+margin: 10px 10px;
+
+}
+  @media (max-width: 768px) {
+    .toolbar {
+      flex-wrap: wrap;
+    }
+    
+    .search input[type="text"] {
+      width: 100%;
+      margin-bottom: 10px;
+      border-radius: 3px;
+    }
+    
+    .search button {
+      width: 100%;
+      border-radius: 3px;
+    }
+    
+    .nav {
+      flex-basis: 100%;
+    }
+    
+    .nav ul {
+      flex-direction: column;
+    }
+    
+    .nav ul li {
+      margin: 10px 0;
+      position: relative;
+    }
+    
+    .nav ul li:hover > .dropdown-content {
+      display: block;
+      position: static;
+      background-color: transparent;
+      box-shadow: none;
+    }
+    
+    .dropdown-content {
+      position: static;
+      display: none;
+      background-color: #fff;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      padding: 10px 0;
+    }
+  }
+
+
+  

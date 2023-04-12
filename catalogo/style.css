@@ -1,0 +1,123 @@
+body {
+    font-family: Arial, sans-serif;
+    height: 100vh;
+  }
+
+
+  /* COMEÇO DO TOLLBAR */
+
+header {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+  }
+
+  .toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 70px;
+  padding: 0 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
+  .logo a {
+    font-size: 28px;
+    font-weight: bold;
+    color: #0074D9;
+    text-decoration: none;
+  }
+
+  .search form {
+    display: flex;
+  }
+  
+  .search input[type="text"] {
+    border: none;
+    border-radius: 3px 0 0 3px;
+    padding: 10px;
+    width: 300px;
+  }
+  
+  .search button {
+    background-color: #0074D9;
+    color: #0074D9;
+    padding: 10px 20px;
+    border-radius: 0 3px 3px 0;
+    cursor: pointer;
+    font-size: 18px;
+  }
+
+  button[type="submit"] {
+    background-color: #0074D9;
+    color: #FFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #004196;
+    color:#FFF
+  }
+
+  .nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav ul li {
+    position: relative;
+    margin: 0 10px;
+  }
+  
+  .nav ul li a {
+    color: #333;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 20px 10px;
+    display: block;
+  }
+  
+  .nav ul li:hover > .dropdown-content {
+    display: block;
+  }
+
+  .cart a {
+    display: flex;
+    align-items: center;
+    color: #333;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 20px;
+    cursor: pointer;
+  }
+  
+  .cart i {
+    font-size: 20px;
+    margin-right: 5px;
+  }
+
+  ul li a:hover {
+    background-color: #0074D9;
+    color: #FFF;
+    border-radius: 5px;
+  }
+
+  .dropdown-content {
+    position: absolute;
+    background-color: #fff;
+    display: none;
+    min-width: 200px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  /* FIM DA TOOLBAR */

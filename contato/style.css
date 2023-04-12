@@ -1,0 +1,258 @@
+/* Definir as fontes */
+body {
+    font-family: Arial, sans-serif;
+    height: 100vh;
+  }
+  
+
+  h1 {
+    color: #333333;
+    font-family: Arial, sans-serif;
+    letter-spacing: 1px;
+    justify-content: center;
+    display: flex;
+  }
+    
+  
+  
+  label {
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 20px;
+    color: #FFF;
+  }
+  
+  input[type="text"],
+  input[type="number"],
+  textarea,
+  input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+  }
+  
+  textarea {
+    resize: vertical;
+  }
+  
+  button[type="submit"] {
+    background-color: #FFF;
+    color: #343030;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 20px;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #004196;
+    color:#FFF
+  }
+  
+  .formulario button {
+    display: block;
+    margin: auto;
+  }
+  /* Adicionar estilo ao formulário */
+  form {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  /* Adicionar estilo ao cabeçalho do formulário */
+  form h2 {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+  }
+
+  .formulario {
+    background-color:  #0074D9;
+    padding: 30px 50px 60px 50px;
+    border-radius: 5px;
+  }
+
+  .container {
+    width: 80%;
+    margin: auto;
+    padding-top: 80px;
+    height: 100vh;
+    background-color: #F0F0F0;
+  }
+  
+  /* Adicionar estilo ao campo de erro */
+  .error {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+  }
+  
+  /* Adicionar estilo ao campo de sucesso */
+  .success {
+    color: green;
+    font-size: 14px;
+    margin-top: 5px;
+  }
+  
+  header {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+  }
+  
+  .toolbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+    padding: 0 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .logo a {
+    font-size: 28px;
+    font-weight: bold;
+    color: #0074D9;
+    text-decoration: none;
+  }
+  
+  .search form {
+    display: flex;
+  }
+  
+  .search input[type="text"] {
+    border: none;
+    border-radius: 3px 0 0 3px;
+    padding: 10px;
+    width: 300px;
+  }
+  
+  .search button {
+    border: none;
+    background-color: #0074D9;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 0 3px 3px 0;
+    cursor: pointer;
+    margin-bottom: 10px;
+    margin-top: 5px;
+  }
+  
+  .nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav ul li {
+    position: relative;
+    margin: 0 10px;
+  }
+  
+  .nav ul li a {
+    color: #333;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 20px 10px;
+    display: block;
+  }
+  
+  .nav ul li:hover > .dropdown-content {
+    display: block;
+  }
+
+  ul li a:hover {
+    background-color: #0074D9;
+    color: #FFF;
+    border-radius: 5px;
+  }
+  
+  .dropdown-content {
+    position: absolute;
+    background-color: #fff;
+    display: none;
+    min-width: 200px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .cart a {
+    display: flex;
+    align-items: center;
+    color: #333;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 20px;
+    cursor: pointer;
+  }
+  
+  .cart i {
+    font-size: 20px;
+    margin-right: 5px;
+  }
+
+  .nossaHistoria h1{
+    margin-top: 6rem;
+  }
+  
+  @media (max-width: 768px) {
+    .toolbar {
+      flex-wrap: wrap;
+    }
+    
+    .search input[type="text"] {
+      width: 100%;
+      margin-bottom: 10px;
+      border-radius: 3px;
+    }
+    
+    .search button {
+      width: 100%;
+      border-radius: 3px;
+    }
+    
+    .nav {
+      flex-basis: 100%;
+    }
+    
+    .nav ul {
+      flex-direction: column;
+    }
+    
+    .nav ul li {
+      margin: 10px 0;
+      position: relative;
+    }
+    
+    .nav ul li:hover > .dropdown-content {
+      display: block;
+      position: static;
+      background-color: transparent;
+      box-shadow: none;
+    }
+    
+    .dropdown-content {
+      position: static;
+      display: none;
+      background-color: #fff;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      padding: 10px 0;
+    }
+  }
+
+
+  
